@@ -1,0 +1,26 @@
+
+<view class="img-container">
+  <view class="centered-image-container">
+    <image src="{{ randomImageSrc }}" bindtap="flipImage" mode="widthFix"></image>
+  </view>
+</view>
+
+<!-- 三个单元格 -->
+<van-cell
+  is-link
+  title="使用帮助"
+  link-type="navigateTo"
+  url="/pages/bangzhu/bangzhu"
+/>
+<van-cell
+  is-link
+  title="关于赛马娘攻略"
+  link-type="navigateTo"
+  url="/pages/guanyu/guanyu"
+/>
+<van-cell
+  is-link
+  title="打赏作者"
+  link-type="navigateTo"
+  url="/pages/dashang/dashang"
+/>

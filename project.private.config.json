@@ -1,0 +1,76 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "demo",
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "角色图鉴",
+          "pathName": "pages/renwu/renwu",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "支援卡图鉴",
+          "pathName": "pages/zhiyuan/zhiyuan",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "搜索页面",
+          "pathName": "pages/sousuo/sousuo",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "我的页面",
+          "pathName": "pages/wode/wode",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "使用帮助",
+          "pathName": "pages/bangzhu/bangzhu",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "关于",
+          "pathName": "pages/guanyu/guanyu",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "打赏作者",
+          "pathName": "pages/dashang/dashang",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "角色信息单页面",
+          "pathName": "pages/renwuxinxi/renwuxinxi",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "支援卡信息",
+          "pathName": "pages/zhiyuanxinxi/zhiyuanxinxi",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

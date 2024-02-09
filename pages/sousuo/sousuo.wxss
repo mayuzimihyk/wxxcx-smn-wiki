@@ -1,0 +1,38 @@
+page{
+  background-color: rgb(239, 239, 240);
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: #f9faf8; /* 设置背景颜色为灰色 */
+  border: 1px solid rgb(5, 5, 5); /* 添加边框 */
+  border-radius: 10px; /* 设置边角为椭圆形 */
+  padding: 5px 10px; /* 添加内边距，增加美观性 */
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.search-input {
+  flex: 1; /* 输入框占据剩余的空间 */
+  border: none; /* 移除输入框的默认边框 */
+  background: none; /* 移除输入框的默认背景 */
+  outline: none; /* 移除输入框的默认外边框 */
+  font-size: 16px; /* 设置字体大小 */
+  padding: 5px; /* 添加内边距 */
+  color: #131212; /* 设置字体颜色为白色 */
+}
+
+.search-button {
+  background-color: #333; /* 设置按钮背景颜色 */
+  border: none; /* 移除按钮的默认边框 */
+  border-radius: 20px; /* 设置按钮的边角为椭圆形 */
+  color: #fff; /* 设置按钮文字颜色为白色 */
+  padding: 5px 10px; /* 添加内边距 */
+  cursor: pointer; /* 添加指针样式，表示可以点击 */
+}
+
+.search-button:hover {
+  background-color: #555; /* 鼠标悬停时按钮背景颜色变化 */
+}

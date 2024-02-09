@@ -1,0 +1,48 @@
+<!-- 顶端轮播图 -->
+<!-- 这个示例使用了 swiper 组件实现轮播图功能，并设置了 indicator-dots 为 true，来显示小圆点。images 数组中存储了轮播图的图片链接。通过 wx:for 循环遍历 images 数组，为每个图片创建一个 swiper-item，并在其中使用 image 组件显示图片。其他样式设置和属性配置可以根据需要进行调整。 -->
+<!-- 添加了 bindtouchstart、bindtouchmove 和 bindtouchend 事件来捕获触摸事件。通过记录起始位置和移动位置，我们可以计算出横向滑动的距离 diffX。如果 diffX 大于 50，表示向右滑动，调用 switchToPrevious 方法切换到前一个图片；如果 diffX 小于 -50，表示向左滑动，调用 switchToNext 方法切换到下一个图片。
+在 switchToPrevious 和 switchToNext 方法中，我们通过 selectComponent 方法选择 .swiper 组件，并调用其 previous 和 next 方法来实现手势切换效果。在 onLoad 生命周期钩子函数中使用 this.selectComponent 方法获取 .swiper 组件，并将其赋值给 swiper 数据属性。然后，在 switchToPrevious 和 switchToNext 方法中，我们通过判断 swiper 是否存在来调用对应的切换方法。 -->
+<view >
+
+<view class="swiper-container">
+  <swiper
+    class="swiper"
+    indicator-dots="{{true}}"
+    indicator-color="rgba(0, 0, 0, .3)"
+    indicator-active-color="#000"
+    autoplay="{{true}}"
+    interval="{{3000}}"
+    circular="{{true}}"
+    bindchange="swiperChange"
+    bindtouchstart="touchStart"
+    bindtouchmove="touchMove"
+    bindtouchend="touchEnd"
+  >
+    <block wx:for="{{images}}" wx:key="index">
+      <swiper-item>
+        <image class="swiper-image" src="{{item}}" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 页面中间部分 -->
+<van-row >
+  <van-col span="13" >
+    <!-- 角色图标 -->
+    <van-image width="180" height="180" src="https://patchwiki.biligame.com/images/umamusume/4/4d/8825hl2ctg28t1gweq9vrdeyfe7ej6m.png" bindtap="redirectToRenwu" />
+  </van-col>
+  <van-col span="10">
+    <!-- 支援卡图标 -->
+    <van-image width="180" height="180" src="https://patchwiki.biligame.com/images/umamusume/0/06/7klwx531xey5pj1z3d87n7l1b8oz27b.png" bindtap="redirectToZhiyuanka"/>
+  </van-col>
+
+</van-row>
+
+</view>
+
+
+
+
+
+

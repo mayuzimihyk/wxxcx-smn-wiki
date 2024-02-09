@@ -1,0 +1,16 @@
+<view class="wenbenone">如果你喜欢本工具,请推荐给朋友,如果你想送点亮晶晶的东西...可以给我买一杯可乐</view>
+<view class="wenbentwo">请注意</view>
+<view class="wenbenthree">1.不打赏也不会影响后续可能的更新</view>
+<view class="wenbenthree">2.打赏也不能让你开启新姿势</view>
+<view class="wenbenthree">3.更不能让你榜上有名(根本没有榜)</view>
+<!-- 点击打赏 -->
+<view class="center-container">
+  <van-button type="primary" bind:click="onClickShow" class="dashang">打赏</van-button>
+  <van-overlay show="{{ show }}" bind:click="onClickHide">
+  <view class="wrapper">
+    <view class="block" catch:tap="noop" />
+  </view>
+</van-overlay>
+</view>
+
+

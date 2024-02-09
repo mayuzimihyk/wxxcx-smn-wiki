@@ -1,0 +1,11 @@
+<van-collapse accordion value="{{ activeName }}" bind:change="onChange">
+  <van-collapse-item title="1.查看马娘角色" name="1">
+    点击赛马娘攻略后,可以选择"角色图鉴"模块,之后选择进入想查看的马娘即可
+  </van-collapse-item>
+  <van-collapse-item title="2.查看支援卡" name="2">
+    点击赛马娘攻略后,可以选择"支援卡图鉴"模块,之后选择进入想查看的对应支援卡即可
+  </van-collapse-item>
+  <van-collapse-item title="3.通过搜索页面搜索马娘" name="3">
+    搜索目前只支持搜索马娘页面,暂不支持支援卡,在后续可能会有更新
+  </van-collapse-item>
+</van-collapse>

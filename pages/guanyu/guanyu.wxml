@@ -1,0 +1,27 @@
+<view class="block">
+  <view class="title">工具原型</view>
+  <view class="content">
+    工具灵感来自于微信小程序工具'关于FGO素材计划'，因为作者是个苦逼的vue党只能自己做个类似的...
+  </view>
+</view>
+
+<view class="block">
+  <view class="title">数据来源</view>
+  <view class="content">
+    小程序内所涉及的公司名称、商标、产品等均为其各自所有者所有的资产，站点内使用仅供用于识别。小程序内使用的所有游戏图片，游戏文案等其他素材，其版权为游戏权利方所有。
+  </view>
+</view>
+
+<view class="block">
+  <view class="title">关于作者</view>
+  <view class="content">
+    00后菜鸟码农，母胎solo至今;
+  </view>
+</view>
+
+<view class="block">
+  <view class="title">主题所想</view>
+  <view class="content">
+    单纯因为小学期...
+  </view>
+</view>

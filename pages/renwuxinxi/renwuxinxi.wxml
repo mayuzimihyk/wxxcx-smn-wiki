@@ -1,0 +1,140 @@
+<!-- 在外部包装一个 view，设置背景色 -->
+<view>
+<!-- 切换动画 滑动切换 -->
+<van-tabs animated swipeable>
+  <van-tab title="基础资料">
+    <view class="onebox">
+    <!-- 头像图 -->
+    <view>
+      <van-image width="120" height="120" src="{{avatarImage}}" style="display: flex; justify-content: center; align-items: center;"/>
+    </view>
+
+
+<!-- 中文名一行 -->
+<van-row>
+  <van-col span="6">中文名</van-col>
+  <van-col span="6">日文名</van-col>
+  <van-col span="6">昵称</van-col>
+  <van-col span="6">初始星级</van-col>
+</van-row>
+
+<van-row>
+  <van-col span="6">{{Cnname}}</van-col>
+  <van-col span="6">{{Jpname}}</van-col>
+  <van-col span="6">{{Nicheng}}</van-col>
+  <van-col span="6">{{Star}}</van-col>
+</van-row>
+
+<!-- 生日一行 -->
+<van-row>
+  <van-col span="6">生日</van-col>
+  <van-col span="6">身高</van-col>
+  <van-col span="6">体重</van-col>
+  <van-col span="6">三围</van-col>
+</van-row>
+
+<van-row>
+  <van-col span="6">{{Birthday}}</van-col>
+  <van-col span="6">{{Height}}</van-col>
+  <van-col span="6">{{Weight}}</van-col>
+  <van-col span="6" wx:for="{{MEasurements}}" wx:key="index">{{item}}</van-col>
+</van-row>
+<!-- cv一行 -->
+<van-row>
+  <van-col span="6">CV</van-col>
+  <van-col span="6">{{Cv}}</van-col>
+</van-row>
+<!-- 简介一行 -->
+<van-row>
+  <van-col span="6">简介</van-col>
+</van-row>
+
+<van-row>
+  <van-col span="6">{{}}</van-col>
+</van-row>
+<!-- 属性面板一行 -->
+<van-row>
+  <van-col span="6">属性面板</van-col>
+</van-row>
+
+<van-row>
+  <van-col span="6" wx:for="{{Propertiespanel}}" wx:key="index">{{item}}</van-col>
+</van-row>
+<!-- 角色别称一行 -->
+<van-row>
+  <van-col span="6">角色别称</van-col>
+</van-row>
+
+<van-row>
+  <van-col wx:for="{{Rolecnname}}" wx:key="index">||{{item}}</van-col>
+</van-row>
+<!-- 角色档案一行 -->
+<van-row>
+  <van-col span="6">角色档案</van-col>
+</van-row>
+<!-- 自我介绍 -->
+<van-row>
+  <van-col span="6">自我介绍:</van-col>
+</van-row>
+<van-row>
+  <van-col span="20">{{Ziwojieshao}}</van-col>
+</van-row>
+<!-- 学年一行 -->
+<van-row>
+  <van-col span="10">学年:{{Xuenian}}</van-col>
+  <van-col span="10">所属宿舍:{{Suoshusushe}}</van-col>
+</van-row>
+<!-- 擅长一行 -->
+<van-row>
+  <van-col span="10">擅长</van-col>
+  <van-col span="10">不擅长</van-col>
+</van-row>
+<van-row>
+  <van-col span="10">{{Shanchang}}</van-col>
+  <van-col span="10">{{Noshanchang}}</van-col>
+</van-row>
+<!-- 耳朵一行 -->
+<van-row>
+  <van-col span="6">耳朵:</van-col>
+</van-row>
+<van-row>
+  <van-col span="20">{{Erduo}}</van-col>
+</van-row>
+
+<van-row>
+  <van-col span="6">尾巴:</van-col>
+</van-row>
+<van-row>
+  <van-col span="20">{{Weiba}}</van-col>
+</van-row>
+<!-- 鞋码一行 -->
+<van-row>
+  <van-col span="6">鞋码:</van-col>
+</van-row>
+<van-row>
+  <van-col span="20">{{Xiema}}</van-col>
+</van-row>
+<!-- 家人一行 -->
+<van-row>
+  <van-col span="6">家人:</van-col>
+</van-row>
+<van-row>
+  <van-col span="20">{{Jiaren}}</van-col>
+</van-row>
+  </view>
+  </van-tab>
+
+  <van-tab title="立绘">
+  <van-image wx:for="{{ fullBodyImage }}" wx:key="index" width="400" height="600" src="{{ item }}" />
+  </van-tab>
+
+
+
+  <van-tab title="官方介绍视频">
+    <view class="video-container">
+  <image src="https://patchwiki.biligame.com/images/umamusume/6/62/nzy7fgtyssnhszsfyz61w1gkugzj0c1.gif" mode=""/>
+</view>
+  </van-tab>
+</van-tabs>
+
+</view>

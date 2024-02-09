@@ -1,0 +1,32 @@
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.onebox {
+  padding: 20px; /* 设置内边距，增加内容与边框的距离 */
+  background-color: #fff; /* 设置背景颜色为白色 */
+  border-radius: 10px; /* 添加圆角边框效果 */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+/* 调整字体大小和颜色 */
+.van-col {
+  font-size: 14px;
+  color: #333;
+}
+
+/* 调整对齐方式 */
+.van-col span {
+  display: inline-block;
+  width: 100%;
+  text-align: left; /* 左对齐文本 */
+}
+
+/* 调整标题字体样式 */
+.van-col.title {
+  font-weight: bold;
+  color: #000;
+}
+

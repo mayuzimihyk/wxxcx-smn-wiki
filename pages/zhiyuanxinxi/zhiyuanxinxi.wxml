@@ -1,0 +1,7 @@
+<view style="display: flex; justify-content: center; align-items: center;">
+  <van-image wx:key="id" width="200" height="300" src="{{bodyimg}}" />
+</view>
+<view>中文名"{{cnname}}</view>
+<view>日文名:{{jpname}}</view>
+<view>小故事：</view>
+<view>{{gushi}}</view>

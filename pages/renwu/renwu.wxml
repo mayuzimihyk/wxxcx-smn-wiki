@@ -1,0 +1,25 @@
+<!-- 全部标签和关注标签 -->
+<van-tabs type="card" color="#BFF7BB" >
+  <van-tab title="全部">
+  <!-- 宫格设置 -->
+  <van-grid column-num="3" border="{{ false }}">
+  <van-grid-item use-slot wx:for="{{ avatarUrls }}" wx:for-item="url" wx:key="url">
+    <image
+      style="width: 100%; height: 120px;"
+      src="{{ url }}"
+      bindtap="redirectToPage"
+      data-index="{{ index }}"
+    />
+  </van-grid-item>
+</van-grid>
+  </van-tab>
+
+
+</van-tabs>
+
+
+
+    
+
+
+

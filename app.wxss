@@ -1,0 +1,20 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/* 浅色模式背景颜色 */
+.light-mode {
+  background-color: rgb(232, 234, 235);
+}
+
+/* 深色模式背景颜色 */
+.dark-mode {
+  background-color: rgb(38, 39, 39);
+}
+  

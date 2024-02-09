@@ -1,0 +1,68 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/renwu/renwu",
+    "pages/zhiyuan/zhiyuan",
+    "pages/logs/logs",
+    "pages/sousuo/sousuo",
+    "pages/wode/wode",
+    "pages/bangzhu/bangzhu",
+    "pages/guanyu/guanyu",
+    "pages/dashang/dashang",
+    "pages/renwuxinxi/renwuxinxi",
+    "pages/zhiyuanxinxi/zhiyuanxinxi"
+    
+  ],
+
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#07C160",
+    "backgroundColor":"#F5F6F5",
+    "list": [
+      {
+      "text": "赛马娘攻略",
+      "pagePath": "pages/index/index",
+      "iconPath": "pages/iconimgs/主页2.png",
+      "selectedIconPath": "pages/iconimgs/主页1.png"
+    },
+    {
+      "text": "搜索",
+      "pagePath": "pages/sousuo/sousuo",
+      "iconPath": "pages/iconimgs/search.png",
+      "selectedIconPath": "pages/iconimgs/search fill.png"
+    },
+    {
+      "text": "我的",
+      "pagePath": "pages/wode/wode",
+      "iconPath": "pages/iconimgs/people.png",
+      "selectedIconPath": "pages/iconimgs/people_fill.png"
+    }
+  ]
+  },
+  
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#E7756D",
+    "navigationBarTitleText": "赛马娘攻略",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-collapse": "@vant/weapp/collapse/index",
+    "van-collapse-item": "@vant/weapp/collapse-item/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-overlay": "@vant/weapp/overlay/index"
+  }
+  
+}
